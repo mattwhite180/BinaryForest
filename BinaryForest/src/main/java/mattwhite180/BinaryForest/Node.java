@@ -10,4 +10,10 @@ public class Node {
         right = null;
         left = null;
     }
+
+    Node() {
+        this.value = 0;
+        right = null;
+        left = null;
+    }
 }
