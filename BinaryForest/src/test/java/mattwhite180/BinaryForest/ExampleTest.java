@@ -4,12 +4,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-class BinaryTreeTests {
+class ExampleTests {
 
 	@Test
 	public void myTest() {
-		BinaryTree myTree = new BinaryTree();
+		Example exapmle = new Example();
 
-		assertEquals(20, myTree.doubleIt(10));
+		assertEquals(20, exapmle.doubleIt(10));
 	}
 }
