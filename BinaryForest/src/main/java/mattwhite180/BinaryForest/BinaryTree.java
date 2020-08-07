@@ -1,10 +1,12 @@
 package mattwhite180.BinaryForest;
 
+import java.util.ArrayList;
+
 public class BinaryTree {
     Node root;
 
     BinaryTree() {
-        root = new Node();
+        root = null;
     }
 
     BinaryTree(int val) {
@@ -77,6 +79,41 @@ public class BinaryTree {
 	      ? containsNodeRecursive(current.left, value)
           : containsNodeRecursive(current.right, value);
           */
+	}
+
+    public String traverseInOrder(Node node) {
+        /*
+        left subtree --> root node --> right subtree
+        */
+        String myString = new String();
+	    if (node != null) {
+	        myString += traverseInOrder(node.left);
+	        myString += "," + String.valueOf(node.value);
+	        myString += traverseInOrder(node.right);
+	    }
+        return myString;
+	}
+
+    public void traversePreOrder(Node node) {
+        /*
+        root node --> left subtree --> right subtree
+        */
+	    if (node != null) {
+	        System.out.print(" " + node.value);
+	        traversePreOrder(node.left);
+	        traversePreOrder(node.right);
+	    }
+	}
+
+    public void traversePostOrder(Node node) {
+        /*
+        left subtree --> right subtree --> root node
+        */
+	    if (node != null) {
+	        traversePostOrder(node.left);
+	        traversePostOrder(node.right);
+	        System.out.print(" " + node.value);
+	    }
 	}
 
     // public
