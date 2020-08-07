@@ -14,7 +14,6 @@
     <p id="orderslist" th:text="${simpletree.mytree}" />
     <a href="/">Submit another tree</a>
     <script>
-    function makeList() {
         let listDataRaw = document.getElementById("orderslist");
         let listDataRawText = listDataRaw.textContent;
         listDataRaw.parentNode.removeChild(listDataRaw);
@@ -41,10 +40,6 @@
             // Add listItem to the listElement
             listElement.appendChild(listItem);
         }
-    }
-
-    // Usage
-    makeList();
     </script>
 </body>
 </html>
