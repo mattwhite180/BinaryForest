@@ -15,13 +15,28 @@ public class SimpleTree {
     }
 
     public void setMytree(String value) {
-        bt.insert(Integer.parseInt(value));
-        bt.insert(4);
-        mytree = bt.traverseLevelOrder();
+        mytree = "";
+        try {
+            String[] stringList = value.split(",");
+            for(int i = 0; i < stringList.length; i++) {
+                bt.insert(Integer.parseInt(stringList[i]));
+            }
+	    } catch (Exception e) {
+            mytree = "ERROR";
+            return;
+	    }
+        mytree += "LEVELORDER:" + bt.traverseLevelOrder() + ";";
+        mytree += "INORDER:" + bt.traverseInOrder(bt.root) + ";";
+        mytree += "PREORDER:" + bt.traversePreOrder(bt.root) + ";";
+        mytree += "POSTORDER:" + bt.traversePostOrder(bt.root) + ";";
         //mytree = ":)";
     }
 
     public String getMytree() {
         return mytree;
+    }
+
+    public void insert(int value) {
+        bt.insert(value);
     }
 }

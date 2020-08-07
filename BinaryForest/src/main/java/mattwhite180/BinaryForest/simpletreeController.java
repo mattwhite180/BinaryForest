@@ -10,15 +10,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class simpletreeController {
 
   @GetMapping("/simpletree")
-  public String greetingForm(Model model) {
+  public String simpletreegForm(Model model) {
     model.addAttribute("simpletree", new SimpleTree());
     return "simpletree";
   }
 
   @PostMapping("/simpletree")
-  public String greetingSubmit(@ModelAttribute SimpleTree simpletree, Model model) {
+  public String simpletreeSubmit(@ModelAttribute SimpleTree simpletree, Model model) {
     model.addAttribute("simpletree", simpletree);
-    return "treeresult";
+    return "simpletree";
   }
 
 }

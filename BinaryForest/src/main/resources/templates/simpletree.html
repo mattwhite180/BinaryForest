@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="https://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Handling Form Submission</title>
+    <title>SimpleTree</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
@@ -10,5 +10,8 @@
     	<p>Insert: <input type="text" th:field="*{mytree}" /></p>
         <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
     </form>
+    <h1>Result</h1>
+    <p th:text="'tree level order: ' + ${simpletree.mytree}" />
+    <a href="/">Submit another tree</a>
 </body>
 </html>
