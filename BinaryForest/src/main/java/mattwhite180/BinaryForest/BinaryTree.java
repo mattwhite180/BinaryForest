@@ -86,35 +86,40 @@ public class BinaryTree {
         left subtree --> root node --> right subtree
         */
         String myString = new String();
-	    if (node != null) {
-	        myString += traverseInOrder(node.left);
-	        myString += "," + String.valueOf(node.value);
-	        myString += traverseInOrder(node.right);
-	    }
-        return myString;
+	if (node != null) {
+	    myString += traverseInOrder(node.left);
+	    myString += "," + String.valueOf(node.value);
+	    myString += traverseInOrder(node.right);
 	}
+        return myString;
+    }
 
-    public void traversePreOrder(Node node) {
+    public String traversePreOrder(Node node) {
         /*
         root node --> left subtree --> right subtree
         */
-	    if (node != null) {
-	        System.out.print(" " + node.value);
-	        traversePreOrder(node.left);
-	        traversePreOrder(node.right);
-	    }
+	String myString = new String();
+	if (node != null) {
+	    myString += "," + String.valueOf(node.value);
+	    myString += traversePreOrder(node.left);
+	    myString += traversePreOrder(node.right);
 	}
+	return myString;
+    }
 
-    public void traversePostOrder(Node node) {
+    public String traversePostOrder(Node node) {
         /*
         left subtree --> right subtree --> root node
         */
-	    if (node != null) {
-	        traversePostOrder(node.left);
-	        traversePostOrder(node.right);
-	        System.out.print(" " + node.value);
-	    }
+	String myString = new String();
+
+	if (node != null) {
+	    myString += traversePostOrder(node.left);
+            myString += traversePostOrder(node.right);
+	    myString += "," + String.valueOf(node.value);
 	}
+	return myString;
+    }
 
     // public
 

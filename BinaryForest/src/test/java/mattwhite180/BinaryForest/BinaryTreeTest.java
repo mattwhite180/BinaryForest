@@ -39,9 +39,14 @@ class BinaryTreeTest {
                 myTree.insert(7);
                 myTree.insert(9);
 
-                String goodString = new String(",3,4,5,6,7,8,9");
+                String inOrderString = new String(",3,4,5,6,7,8,9");
+                assertEquals(myTree.traverseInOrder(myTree.root), inOrderString);
 
-                assertEquals(myTree.traverseInOrder(myTree.root), goodString);
-
-        }
+		String preOrderString = new String(",6,4,3,5,8,7,9");
+		assertEquals(myTree.traversePreOrder(myTree.root), preOrderString);
+        
+		String postOrderString = new String(",3,5,4,7,9,8,6");
+		assertEquals(myTree.traversePostOrder(myTree.root), postOrderString);
+	
+	}
 }
