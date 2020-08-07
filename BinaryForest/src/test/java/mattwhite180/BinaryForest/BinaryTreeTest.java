@@ -15,4 +15,12 @@ class BinaryTreeTest {
                 assertEquals(myTree.containsNode(4), true);
                 assertNotEquals(myTree.containsNode(2), true);
         }
+
+        @Test
+        public void removeTest() {
+                BinaryTree myTree = new BinaryTree();
+                myTree.insert(3);
+                myTree.remove(3);
+                assertNotEquals(myTree.containsNode(3), true);
+        }
 }
