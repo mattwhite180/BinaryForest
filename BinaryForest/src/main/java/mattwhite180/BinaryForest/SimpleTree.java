@@ -24,11 +24,11 @@ public class SimpleTree {
 	    } catch (Exception e) {
             mytree = "ERROR";
             return;
-	    }
-        mytree += "LEVELORDER:" + bt.traverseLevelOrder() + ";";
-        mytree += "INORDER:" + bt.traverseInOrder(bt.root) + ";";
-        mytree += "PREORDER:" + bt.traversePreOrder(bt.root) + ";";
-        mytree += "POSTORDER:" + bt.traversePostOrder(bt.root) + ";";
+        }
+        mytree += "IN ORDER..........." + bt.traverseInOrder(bt.root) + ";";
+        mytree += "PRE ORDER........" + bt.traversePreOrder(bt.root) + ";";
+        mytree += "POST ORDER......" + bt.traversePostOrder(bt.root) + ";";
+        mytree += "LEVEL ORDER..." + bt.traverseLevelOrder() + ";";
         //mytree = ":)";
     }
 
