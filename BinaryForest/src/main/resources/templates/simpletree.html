@@ -7,8 +7,8 @@
 <body id="simpletreebody">
 	<h1>Form</h1>
     <form action="#" th:action="@{/simpletree}" th:object="${simpletree}" method="post">
-    	<p>Insert: <input type="text" default="" th:field="*{mytree}" /></p>
-        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    	<p>Insert: <input type="text" default="" th:field="*{mytree}" value="?"/></p>
+        <p><input type="submit" value="Submit" /></p>
     </form>
     <h1>Result</h1>
     <p id="orderslist" th:text="${simpletree.mytree}" />
