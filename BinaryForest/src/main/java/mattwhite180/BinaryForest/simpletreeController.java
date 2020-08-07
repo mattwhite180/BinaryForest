@@ -18,7 +18,7 @@ public class simpletreeController {
   @PostMapping("/simpletree")
   public String simpletreeSubmit(@ModelAttribute SimpleTree simpletree, Model model) {
     model.addAttribute("simpletree", simpletree);
-    return "simpletree";
+    return "treeresult";
   }
 
 }
