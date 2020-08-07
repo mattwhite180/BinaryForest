@@ -47,6 +47,8 @@ class BinaryTreeTest {
         
 		String postOrderString = new String(",3,5,4,7,9,8,6");
 		assertEquals(myTree.traversePostOrder(myTree.root), postOrderString);
-	
+
+		String levelOrderString = new String(",6,4,8,3,5,7,9");
+		assertEquals(myTree.traverseLevelOrder(), levelOrderString);
 	}
 }

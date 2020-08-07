@@ -1,6 +1,6 @@
 package mattwhite180.BinaryForest;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class BinaryTree {
     Node root;
@@ -81,16 +81,18 @@ public class BinaryTree {
           */
 	}
 
+    // public
+
     public String traverseInOrder(Node node) {
         /*
         left subtree --> root node --> right subtree
         */
         String myString = new String();
-	if (node != null) {
-	    myString += traverseInOrder(node.left);
-	    myString += "," + String.valueOf(node.value);
-	    myString += traverseInOrder(node.right);
-	}
+		if (node != null) {
+	    	myString += traverseInOrder(node.left);
+	    	myString += "," + String.valueOf(node.value);
+	    	myString += traverseInOrder(node.right);
+		}
         return myString;
     }
 
@@ -98,30 +100,55 @@ public class BinaryTree {
         /*
         root node --> left subtree --> right subtree
         */
-	String myString = new String();
-	if (node != null) {
-	    myString += "," + String.valueOf(node.value);
-	    myString += traversePreOrder(node.left);
-	    myString += traversePreOrder(node.right);
-	}
-	return myString;
+		String myString = new String();
+		if (node != null) {
+		    myString += "," + String.valueOf(node.value);
+		    myString += traversePreOrder(node.left);
+	   		myString += traversePreOrder(node.right);
+		}
+		return myString;
     }
 
     public String traversePostOrder(Node node) {
         /*
         left subtree --> right subtree --> root node
         */
-	String myString = new String();
+		String myString = new String();
 
-	if (node != null) {
-	    myString += traversePostOrder(node.left);
+		if (node != null) {
+	    	myString += traversePostOrder(node.left);
             myString += traversePostOrder(node.right);
-	    myString += "," + String.valueOf(node.value);
-	}
-	return myString;
+	    	myString += "," + String.valueOf(node.value);
+		}
+		return myString;
     }
 
-    // public
+	public String traverseLevelOrder() {
+		
+		String myString = new String();
+
+		if (root == null) {
+			return myString;
+		}
+
+		Queue<Node> nodes = new LinkedList<>();
+		nodes.add(root);
+
+		while (!nodes.isEmpty()) {
+			Node node = nodes.remove();
+
+			myString += "," + String.valueOf(node.value);
+
+			if (node.left != null) {
+				nodes.add(node.left);
+			}
+
+			if (node.right != null) {
+				nodes.add(node.right);
+			}
+		}
+		return myString;
+	}
 
     public void insert(int value) {
 	    root = insertRecursive(root, value);
