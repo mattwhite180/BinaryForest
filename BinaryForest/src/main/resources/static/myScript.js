@@ -29,6 +29,10 @@ function makeOrderList(oldList, mainBody) {
 
 function makeNode(nodeText) {
     let myNode = document.createElement('p');
+    if (nodeText == "NULL") {
+        myNode.setAttribute("class", "treenodenull");
+        return myNode;
+    }
     myNode.setAttribute("class", "treenode");
     myNode.innerHTML = "            " + "\n" + nodeText;
     return myNode;
@@ -37,5 +41,18 @@ function makeNode(nodeText) {
 function makeDiv(whereToAttach, howManyTimes) {
     for (let i = 0; i < howManyTimes; i++) {
         document.getElementById(whereToAttach).append(document.createElement("br"));
+    }
+}
+
+function makeTree(numList, myBody) {
+    let myList = [6,4,8,3,5,7,9];
+    let rowCount = 1;
+    let listCount = 0;
+    while (listCount < myList.length) {
+        for (let i = 0; i < rowCount; i++) {
+
+        }
+        makeDiv(myBody, 3);
+        rowCount *= 2;
     }
 }

@@ -8,6 +8,16 @@
     white-space: pre;
 }
 
+.treenodenull {
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    white-space: pre;
+}
+
 .tree-row {
     display: flex;
     flex-direction: row;
