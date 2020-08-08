@@ -26,3 +26,13 @@ function makeOrderList(oldList, mainBody) {
         listElement.appendChild(listItem);
     }
 }
+
+function makeNode(nodeText) {
+    let myNode = document.createElement('div');
+    let myText = document.createElement('p');
+    myNode.className="treenode";
+    myText.className="treenodeval";
+    myText.innerHTML = nodeText;
+    myNode.appendChild(myText);
+    return myNode;
+}

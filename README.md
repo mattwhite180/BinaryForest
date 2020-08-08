@@ -8,3 +8,4 @@ Go to `http://localhost:8080/greeting?name=User`
 
 [Application](https://spring.io/guides/gs/spring-boot/)
 [Forms](https://spring.io/guides/gs/handling-form-submission/)
+[style](https://www.w3schools.com/css/css_link.asp)

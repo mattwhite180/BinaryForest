@@ -1,0 +1,14 @@
+.treenode {
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(3,78,136,0.7);
+    border-radius: 50%;
+}
+.treenodeval {
+    position: relative;
+    color: black;
+    left: 14px;
+    top: 14px;
+    border-radius: 1%;
+}
