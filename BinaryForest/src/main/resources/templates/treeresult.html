@@ -29,7 +29,7 @@
     <h1>Result</h1>
     <p id="orderslist" th:text="${simpletree.mytree}" />
     <script>
-        makeOrderList();
+        makeOrderList("orderslist", "treebody");
     </script>
     <a href="/simpletree">Create another SimpleTree</a>
     <br>
