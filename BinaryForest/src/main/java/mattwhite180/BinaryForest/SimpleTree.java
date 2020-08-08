@@ -30,7 +30,7 @@ public class SimpleTree {
         mytree += "PRE ORDER........" + bt.traversePreOrder(bt.root) + ";";
         mytree += "POST ORDER......" + bt.traversePostOrder(bt.root) + ";";
         mytree += "LEVEL ORDER..." + bt.traverseLevelOrder() + ";";
-        mytree += "TESTING1234..." + bt.treeToString() + ";";
+        mytree += "TESTING1234..." + bt.treeToString();
         //mytree = ":)";
     }
 

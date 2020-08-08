@@ -25,6 +25,7 @@ function makeOrderList(oldList, mainBody) {
         // Add listItem to the listElement
         listElement.appendChild(listItem);
     }
+    return listData[listData.length - 1];
 }
 
 function makeNode(nodeText) {
@@ -33,6 +34,12 @@ function makeNode(nodeText) {
         myNode.setAttribute("class", "treenodenull");
         return myNode;
     }
+    /*
+    console.log("value:", nodeText);
+    console.log("heigth:", myNode.clientTop);
+    console.log("width: ", myNode.clientLeft);
+    console.log("---------");
+    */
     myNode.setAttribute("class", "treenode");
     myNode.innerHTML = "            " + "\n" + nodeText;
     return myNode;
@@ -44,9 +51,10 @@ function makeDiv(whereToAttach, howManyTimes) {
     }
 }
 
-function makeTree(numList, myBody) {
+function makeTree(numListRaw, myBody) {
+    let numList = numListRaw.split(",");
     let rowCount = 1;
-    let listCount = 0;
+    let listCount = 1;
     while (listCount < numList.length) {
         let currentDiv = document.createElement('div');
         currentDiv.setAttribute("class", "tree-row");
