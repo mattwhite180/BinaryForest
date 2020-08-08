@@ -8,7 +8,15 @@
 .treenodeval {
     position: relative;
     color: black;
-    left: 14px;
+    left:14px;
     top: 14px;
     border-radius: 1%;
 }
+
+.tree-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+

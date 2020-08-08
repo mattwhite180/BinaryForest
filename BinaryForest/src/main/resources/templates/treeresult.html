@@ -8,8 +8,15 @@
 </head>
 <body id="treebody">
     <script>
-        let myNode = makeNode("123");
+        let myNode = makeNode("123", "?");
         document.getElementById("treebody").append(myNode);
+        let doubleDiv = document.createElement("div");
+        let divOne = makeNode("???", "left");
+        let divTwo = makeNode("!!!", "right");
+        doubleDiv.setAttribute("class", "tree-row");
+        doubleDiv.append(divOne);
+        doubleDiv.append(divTwo);
+        document.getElementById("treebody").append(doubleDiv);
     </script>
     <h1>Result</h1>
     <p id="orderslist" th:text="${simpletree.mytree}" />

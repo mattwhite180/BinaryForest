@@ -27,11 +27,11 @@ function makeOrderList(oldList, mainBody) {
     }
 }
 
-function makeNode(nodeText) {
+function makeNode(nodeText, side) {
     let myNode = document.createElement('div');
     let myText = document.createElement('p');
-    myNode.className="treenode";
-    myText.className="treenodeval";
+    myText.setAttribute("class", "treenodeval");
+    myNode.setAttribute("class", "treenode");
     myText.innerHTML = nodeText;
     myNode.appendChild(myText);
     return myNode;
