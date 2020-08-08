@@ -63,6 +63,23 @@ class BinaryTreeTest {
                 assertTrue(myTree.hasNum(goodString));
         }
 
+        @Test
+        public void getNodeByBinaryTest() {
+                BinaryTree myTree = new BinaryTree();
+                myTree.insert(6);
+                myTree.insert(4);
+                myTree.insert(8);
+                myTree.insert(3);
+                myTree.insert(5);
+                myTree.insert(7);
+                myTree.insert(9);
+
+                assertEquals(myTree.getNodeByBinary(myTree.root, "LL", 0), "3");
+                assertEquals(myTree.getNodeByBinary(myTree.root, "L", 0), "4");
+                assertEquals(myTree.getNodeByBinary(myTree.root, "LLLLLL", 0), "NULL");
+                assertEquals(myTree.getNodeByBinary(myTree.root, "RL", 0), "7");
+        }
+
         /*
         @Test
         public void viewTest() {

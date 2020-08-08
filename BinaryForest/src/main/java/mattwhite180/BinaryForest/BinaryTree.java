@@ -81,8 +81,10 @@ public class BinaryTree {
           : containsNodeRecursive(current.right, value);
           */
     }
-    
-    private String getNodeByBinary(Node node, String address, int level) {
+
+    // public
+
+    public String getNodeByBinary(Node node, String address, int level) {
         if (node == null) {
             return "NULL";
         }
@@ -96,8 +98,6 @@ public class BinaryTree {
             return getNodeByBinary(node.right, address, level + 1);
         }
     }
-
-    // public
 
     public boolean hasNum(String str) {
         for (int i = 0; i < str.length(); i++) {
