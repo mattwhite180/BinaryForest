@@ -25,6 +25,7 @@ public class SimpleTree {
             mytree = "ERROR";
             return;
         }
+        mytree += "INPUT..................." + value + ";";
         mytree += "IN ORDER..........." + bt.traverseInOrder(bt.root) + ";";
         mytree += "PRE ORDER........" + bt.traversePreOrder(bt.root) + ";";
         mytree += "POST ORDER......" + bt.traversePostOrder(bt.root) + ";";

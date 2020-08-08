@@ -3,8 +3,28 @@
 <head>
     <title>SimpleTree</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        .circle {
+          height: 50px;
+          width: 50px;
+          background-color: rgba(3,78,136,0.7);
+          border-radius: 50%;
+          content: "1";
+        }
+        .circle:before {
+          content:"aaa";
+          width:0px;
+          height:0px;
+          border-top:60px solid transparent;
+          border-left:60px solid transparent;
+          position:relative;
+          right:90%;
+          top:15px;
+        }
+    </style>
 </head>
 <body id="treebody">
+    <div class="circle"></div>
     <h1>Result</h1>
     <p id="orderslist" th:text="${simpletree.mytree}" />
     <a href="/simpletree">Create another SimpleTree</a>
