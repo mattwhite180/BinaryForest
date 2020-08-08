@@ -97,7 +97,9 @@ public class BinaryTree {
         }
     }
 
-    private boolean hasNum(String str) {
+    // public
+
+    public boolean hasNum(String str) {
         for (int i = 0; i < str.length(); i++) {
              if (Character.isDigit(str.charAt(i))) {
                  return true;
@@ -105,8 +107,6 @@ public class BinaryTree {
         }
         return false;
     }
-
-    // public
 
     public String traverseInOrder(Node node) {
         /*

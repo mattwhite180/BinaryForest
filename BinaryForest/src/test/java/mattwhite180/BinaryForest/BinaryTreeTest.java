@@ -48,5 +48,30 @@ class BinaryTreeTest {
 
 		String levelOrderString = new String(",6,4,8,3,5,7,9");
 		assertEquals(myTree.traverseLevelOrder(), levelOrderString);
-	}
+        }
+        
+        @Test
+        public void hasNumTest() {
+                BinaryTree myTree = new BinaryTree();
+                String stringComma = new String(",,,,,,,,");
+                String string0 = new String(",,,,0,,,");
+                String stringNothing = new String();
+                String goodString = new String(",0,0,0");
+                assertFalse(myTree.hasNum(stringComma));
+                assertTrue(myTree.hasNum(string0));
+                assertFalse(myTree.hasNum(stringNothing));
+                assertTrue(myTree.hasNum(goodString));
+        }
+
+        /*
+        @Test
+        public void viewTest() {
+                BinaryTree myTree = new BinaryTree();
+                myTree.insert(6);
+                myTree.insert(8);
+                myTree.insert(7);
+                String goodString = new String(",6,NULL,8,NULL,NULL,7,NULL");
+		assertEquals(myTree.treeToString(), goodString);
+        }
+        */
 }
