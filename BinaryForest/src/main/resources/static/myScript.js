@@ -30,18 +30,12 @@ function makeOrderList(oldList, mainBody) {
 
 function makeNode(nodeText) {
     let myNode = document.createElement('p');
+    myNode.innerHTML = "            " + "\n" + nodeText;
     if (nodeText == "NULL") {
         myNode.setAttribute("class", "treenodenull");
         return myNode;
     }
-    /*
-    console.log("value:", nodeText);
-    console.log("heigth:", myNode.clientTop);
-    console.log("width: ", myNode.clientLeft);
-    console.log("---------");
-    */
     myNode.setAttribute("class", "treenode");
-    myNode.innerHTML = "            " + "\n" + nodeText;
     return myNode;
 }
 
@@ -63,7 +57,7 @@ function makeTree(numListRaw, myBody) {
             listCount += 1;
         }
         document.getElementById(myBody).appendChild(currentDiv);
-        makeDiv(myBody, 3);
+        makeDiv(myBody, 4);
         rowCount *= 2;
     }
 }
