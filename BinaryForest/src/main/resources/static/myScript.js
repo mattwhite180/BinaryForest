@@ -1,5 +1,5 @@
-function makeOrderList() {
-    let listDataRaw = document.getElementById("orderslist");
+function makeOrderList(oldList, mainBody) {
+    let listDataRaw = document.getElementById(oldList);
     let listDataRawText = listDataRaw.textContent;
     listDataRaw.parentNode.removeChild(listDataRaw);
     let listData = listDataRawText.split(";");
@@ -12,7 +12,7 @@ function makeOrderList() {
 
     // Add it to the page
     //document.getElementsByTagName('body')[0].appendChild(listContainer);
-    document.getElementById("treebody").appendChild(listContainer)
+    document.getElementById(mainBody).appendChild(listContainer)
     listContainer.appendChild(listElement);
 
     for (let i = 0; i < numberOfListItems - 1; ++i) {
