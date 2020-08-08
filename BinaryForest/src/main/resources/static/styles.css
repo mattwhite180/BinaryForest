@@ -5,7 +5,9 @@
     text-align: center;
     background-color: rgba(3,78,136,0.7);
     border-radius: 50%;
+    white-space: pre;
 }
+/*
 .treenodeval {
     position: relative;
     color: black;
@@ -13,7 +15,7 @@
     top: 14px;
     border-radius: 1%;
 }
-
+*/
 .tree-row {
     display: flex;
     flex-direction: row;

@@ -10,23 +10,14 @@
     <script>
         let myNode = makeNode("123")
         document.getElementById("treebody").append(myNode);
-        document.getElementById("treebody").append(document.createElement("br"));
-        document.getElementById("treebody").append(document.createElement("br"));
-        document.getElementById("treebody").append(document.createElement("br"));
-        document.getElementById("treebody").append(document.createElement("br"));
-        document.getElementById("treebody").append(document.createElement("br"));
+        makeDiv("treebody", 1);
         let doubleDiv = document.createElement("div");
         let divOne = makeNode("???");
         let divTwo = makeNode("!!!");
         doubleDiv.setAttribute("class", "tree-row");
         doubleDiv.append(divOne);
         doubleDiv.append(divTwo);
-        document.getElementById("treebody").append(doubleDiv);
-        document.getElementById("treebody").append(document.createElement("br"));
-        document.getElementById("treebody").append(document.createElement("br"));
-        document.getElementById("treebody").append(document.createElement("br"));
-        document.getElementById("treebody").append(document.createElement("br"));
-        document.getElementById("treebody").append(document.createElement("br"));
+        makeDiv("treebody", 3);
         let qdiv = document.createElement("div");
         qdiv.setAttribute("class", "tree-row");
         let divUno = makeNode("1");

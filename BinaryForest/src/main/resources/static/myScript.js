@@ -31,6 +31,12 @@ function makeNode(nodeText) {
     let myNode = document.createElement('p');
     //let myText = document.createElement('p');
     myNode.setAttribute("class", "treenode");
-    myNode.innerHTML = "............" + "\n" + nodeText;
+    myNode.innerHTML = "            " + "\n" + nodeText;
     return myNode;
+}
+
+function makeDiv(whereToAttach, howManyTimes) {
+    for (let i = 0; i < howManyTimes; i++) {
+        document.getElementById(whereToAttach).append(document.createElement("br"));
+    }
 }
