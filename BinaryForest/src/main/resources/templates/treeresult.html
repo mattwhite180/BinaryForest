@@ -3,16 +3,17 @@
 <head>
     <title>SimpleTree</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="myScript.js"></script>
     <style>
-        .circle {
+        .treenode {
+          margin: auto;
           height: 50px;
           width: 50px;
           background-color: rgba(3,78,136,0.7);
           border-radius: 50%;
           content: "1";
         }
-        .circle:before {
-          content:"aaa";
+        .treenode:before {
           width:0px;
           height:0px;
           border-top:60px solid transparent;
@@ -24,39 +25,14 @@
     </style>
 </head>
 <body id="treebody">
-    <div class="circle"></div>
+    <div class="treenode" content:"aaa"></div>
     <h1>Result</h1>
     <p id="orderslist" th:text="${simpletree.mytree}" />
+    <script>
+        makeOrderList();
+    </script>
     <a href="/simpletree">Create another SimpleTree</a>
     <br>
     <a href="/">Back to index</a>
-    <script>
-        let listDataRaw = document.getElementById("orderslist");
-        let listDataRawText = listDataRaw.textContent;
-        listDataRaw.parentNode.removeChild(listDataRaw);
-        let listData = listDataRawText.split(";");
-        // Make a container element for the list
-        listContainer = document.createElement('div'),
-        // Make the list
-        listElement = document.createElement('ul'),
-        // Set up a loop that goes through the items in listItems one at a time
-        numberOfListItems = listData.length,
-
-        // Add it to the page
-        //document.getElementsByTagName('body')[0].appendChild(listContainer);
-        document.getElementById("treebody").appendChild(listContainer)
-        listContainer.appendChild(listElement);
-
-        for (let i = 0; i < numberOfListItems - 1; ++i) {
-            // create an item for each one
-            let listItem = document.createElement('li');
-
-            // Add the item text
-            listItem.innerHTML = listData[i];
-
-            // Add listItem to the listElement
-            listElement.appendChild(listItem);
-        }
-    </script>
 </body>
 </html>
