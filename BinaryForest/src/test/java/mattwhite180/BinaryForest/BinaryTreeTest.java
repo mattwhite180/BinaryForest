@@ -38,16 +38,16 @@ class BinaryTreeTest {
                 myTree.insert(9);
 
                 String inOrderString = new String(",3,4,5,6,7,8,9");
-                assertEquals(myTree.traverseInOrder(myTree.root), inOrderString);
+                assertEquals(inOrderString, myTree.traverseInOrder(myTree.root));
 
 		String preOrderString = new String(",6,4,3,5,8,7,9");
-		assertEquals(myTree.traversePreOrder(myTree.root), preOrderString);
+		assertEquals(preOrderString, myTree.traversePreOrder(myTree.root));
         
 		String postOrderString = new String(",3,5,4,7,9,8,6");
-		assertEquals(myTree.traversePostOrder(myTree.root), postOrderString);
+		assertEquals(postOrderString, myTree.traversePostOrder(myTree.root));
 
 		String levelOrderString = new String(",6,4,8,3,5,7,9");
-		assertEquals(myTree.traverseLevelOrder(), levelOrderString);
+		assertEquals(levelOrderString, myTree.traverseLevelOrder());
         }
         
         @Test
@@ -74,21 +74,30 @@ class BinaryTreeTest {
                 myTree.insert(7);
                 myTree.insert(9);
 
-                assertEquals(myTree.getNodeByBinary(myTree.root, "LL", 0), "3");
-                assertEquals(myTree.getNodeByBinary(myTree.root, "L", 0), "4");
-                assertEquals(myTree.getNodeByBinary(myTree.root, "LLLLLL", 0), "NULL");
-                assertEquals(myTree.getNodeByBinary(myTree.root, "RL", 0), "7");
+                assertEquals("3", myTree.getNodeByBinary(myTree.root, "LL", 0));
+                assertEquals("4",  myTree.getNodeByBinary(myTree.root, "L", 0));
+                assertEquals("NULL", myTree.getNodeByBinary(myTree.root, "LLLLLL", 0));
+                assertEquals("7", myTree.getNodeByBinary(myTree.root, "RL", 0));
         }
 
-        /*
         @Test
         public void viewTest() {
+                BinaryTree bt = new BinaryTree();
+                bt.insert(6);
+                bt.insert(8);
+                bt.insert(7);
+                String goodString = new String(",6,NULL,8,NULL,NULL,7,NULL");
+                assertEquals(goodString, bt.treeToString());
+                
                 BinaryTree myTree = new BinaryTree();
                 myTree.insert(6);
+                myTree.insert(4);
                 myTree.insert(8);
+                myTree.insert(3);
+                myTree.insert(5);
                 myTree.insert(7);
-                String goodString = new String(",6,NULL,8,NULL,NULL,7,NULL");
-		assertEquals(myTree.treeToString(), goodString);
+                myTree.insert(9);
+
+                assertEquals(new String(",6,4,8,3,5,7,9"), myTree.treeToString());
         }
-        */
 }

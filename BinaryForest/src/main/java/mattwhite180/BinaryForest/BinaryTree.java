@@ -178,6 +178,13 @@ public class BinaryTree {
     public String treeToString() {
         String myString = new String();
 
+        if (root == null) {
+            return myString;
+        }
+        else {
+            myString += "," + root.value;
+        }
+
         ArrayList<String> myList = new ArrayList<String>();
         myList.add("L");
         myList.add("R");
@@ -189,6 +196,7 @@ public class BinaryTree {
             if (hasNum(tempString) == false) {
                 return myString;
             }
+            myString += tempString;
             ArrayList<String> tempList = new ArrayList<String>();
             for (int i = 0; i < myList.size(); i++) {
                 tempList.add("L" + myList.get(i));
