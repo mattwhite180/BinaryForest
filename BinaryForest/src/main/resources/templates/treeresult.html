@@ -8,6 +8,7 @@
 </head>
 <body id="treebody">
     <script>
+        /*
         let myNode = makeNode("root");
         document.getElementById("treebody").append(myNode);
         makeDiv("treebody", 3);
@@ -30,6 +31,8 @@
         qdiv.append(divTres);
         qdiv.append(divCuatro);
         document.getElementById("treebody").append(qdiv);
+        */
+       makeTree([6,"NULL",8,"NULL","NULL",7,"NULL"], "treebody");
     </script>
     <h1>Result</h1>
     <p id="orderslist" th:text="${simpletree.mytree}" />
