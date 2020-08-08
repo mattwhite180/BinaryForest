@@ -8,15 +8,36 @@
 </head>
 <body id="treebody">
     <script>
-        let myNode = makeNode("123", "?");
+        let myNode = makeNode("123")
         document.getElementById("treebody").append(myNode);
+        document.getElementById("treebody").append(document.createElement("br"));
+        document.getElementById("treebody").append(document.createElement("br"));
+        document.getElementById("treebody").append(document.createElement("br"));
+        document.getElementById("treebody").append(document.createElement("br"));
+        document.getElementById("treebody").append(document.createElement("br"));
         let doubleDiv = document.createElement("div");
-        let divOne = makeNode("???", "left");
-        let divTwo = makeNode("!!!", "right");
+        let divOne = makeNode("???");
+        let divTwo = makeNode("!!!");
         doubleDiv.setAttribute("class", "tree-row");
         doubleDiv.append(divOne);
         doubleDiv.append(divTwo);
         document.getElementById("treebody").append(doubleDiv);
+        document.getElementById("treebody").append(document.createElement("br"));
+        document.getElementById("treebody").append(document.createElement("br"));
+        document.getElementById("treebody").append(document.createElement("br"));
+        document.getElementById("treebody").append(document.createElement("br"));
+        document.getElementById("treebody").append(document.createElement("br"));
+        let qdiv = document.createElement("div");
+        qdiv.setAttribute("class", "tree-row");
+        let divUno = makeNode("1");
+        let divDos = makeNode("2");
+        let divTres = makeNode("3");
+        let divCuatro = makeNode("4");
+        qdiv.append(divUno);
+        qdiv.append(divDos);
+        qdiv.append(divTres);
+        qdiv.append(divCuatro);
+        document.getElementById("treebody").append(qdiv);
     </script>
     <h1>Result</h1>
     <p id="orderslist" th:text="${simpletree.mytree}" />
