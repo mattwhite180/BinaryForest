@@ -8,15 +8,16 @@
 </head>
 <body id="treebody">
     <script>
-        let myNode = makeNode("123")
+        let myNode = makeNode("123");
         document.getElementById("treebody").append(myNode);
-        makeDiv("treebody", 1);
+        makeDiv("treebody", 3);
         let doubleDiv = document.createElement("div");
         let divOne = makeNode("???");
         let divTwo = makeNode("!!!");
         doubleDiv.setAttribute("class", "tree-row");
         doubleDiv.append(divOne);
         doubleDiv.append(divTwo);
+        document.getElementById("treebody").append(doubleDiv);
         makeDiv("treebody", 3);
         let qdiv = document.createElement("div");
         qdiv.setAttribute("class", "tree-row");
