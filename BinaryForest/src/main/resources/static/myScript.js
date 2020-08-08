@@ -41,11 +41,15 @@ function makeNode(nodeText) {
 
 function makeDiv(whereToAttach, howManyTimes) {
     for (let i = 0; i < howManyTimes; i++) {
-        document.getElementById(whereToAttach).append(document.createElement("br"));
+        whereToAttach.append(document.createElement("br"));
     }
 }
 
 function makeTree(numListRaw, myBody) {
+    let treeDiv = document.createElement('div');
+    treeDiv.setAttribute("class", "tree-div");
+    document.getElementById(myBody).appendChild(treeDiv)
+    makeDiv(treeDiv, 1);
     let numList = numListRaw.split(",");
     let rowCount = 1;
     let listCount = 1;
@@ -56,8 +60,8 @@ function makeTree(numListRaw, myBody) {
             currentDiv.appendChild(makeNode(numList[listCount]));
             listCount += 1;
         }
-        document.getElementById(myBody).appendChild(currentDiv);
-        makeDiv(myBody, 4);
+        treeDiv.appendChild(currentDiv);
+        makeDiv(treeDiv, 1);
         rowCount *= 2;
-    }
+    };
 }
