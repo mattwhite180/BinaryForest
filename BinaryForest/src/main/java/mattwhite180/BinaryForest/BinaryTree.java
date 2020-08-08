@@ -1,6 +1,7 @@
 package mattwhite180.BinaryForest;
 
 import java.util.*;
+import java.util.ArrayList;
 
 public class BinaryTree {
     Node root;
@@ -64,10 +65,10 @@ public class BinaryTree {
     private boolean containsNodeRecursive(Node current, int value) {
 	    if (current == null) {
 	        return false;
-	    } 
+	    }
 	    if (value == current.value) {
 	        return true;
-        } 
+        }
         if (value < current.value) {
             return containsNodeRecursive(current.left, value);
         }
@@ -79,7 +80,31 @@ public class BinaryTree {
 	      ? containsNodeRecursive(current.left, value)
           : containsNodeRecursive(current.right, value);
           */
-	}
+    }
+    
+    private String getNodeByBinary(Node node, String address, int level) {
+        if (node == null) {
+            return "NULL";
+        }
+        if (level >= address.length()) {
+            return Integer.toString(node.value);
+        }
+        if (address.charAt(level) == 'L') {
+            return getNodeByBinary(node.left, address, level + 1);
+        }
+        else { // == 'R'
+            return getNodeByBinary(node.right, address, level + 1);
+        }
+    }
+
+    private boolean hasNum(String str) {
+        for (int i = 0; i < str.length(); i++) {
+             if (Character.isDigit(str.charAt(i))) {
+                 return true;
+             }
+        }
+        return false;
+    }
 
     // public
 
@@ -148,7 +173,64 @@ public class BinaryTree {
 			}
 		}
 		return myString;
-	}
+    }
+
+    public String treeToString() {
+        String myString = new String();
+
+        ArrayList<String> myList = new ArrayList<String>();
+        myList.add("L");
+        myList.add("R");
+        while (true) {
+            String tempString = new String();
+            for (int i = 0; i < myList.size(); i++) {
+                tempString += "," + getNodeByBinary(root, myList.get(i), 0);
+            }
+            if (hasNum(tempString) == false) {
+                return myString;
+            }
+            ArrayList<String> tempList = new ArrayList<String>();
+            for (int i = 0; i < myList.size(); i++) {
+                tempList.add("L" + myList.get(i));
+            }
+            for (int i = 0; i < myList.size(); i++) {
+                tempList.add("R" + myList.get(i));
+            }
+            myList = tempList;
+        }
+    }
+
+    public String treeToStringmyDev(String myString, int level, Node node) {
+        /*
+        root node --> left subtree --> right subtree
+        */
+        String myString = new String();
+        if (node != null) {
+            myString += "," + String.valueOf(node.value);
+            myString += traversePreOrder(node.left);
+            myString += traversePreOrder(node.right);
+        }
+        return myString;
+    }
+
+    public String treeToStringDev() {
+        ArrayList<Integer> nullList = new ArrayList<Integer>();
+        String myString = new String();
+
+        int levelTotal = 1;
+        boolean allNull = false;
+
+        while (true) {
+            allNull = true;
+            for (int i = 0; i < levelTotal; i++) {
+                
+            }
+            if (allNull == true) {
+                return myString;
+            }
+            levelTotal *= 2;
+        }
+    }
 
     public void insert(int value) {
 	    root = insertRecursive(root, value);
