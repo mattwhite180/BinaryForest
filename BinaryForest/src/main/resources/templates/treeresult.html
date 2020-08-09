@@ -11,31 +11,9 @@
     <p id="orderslist" th:text="${simpletree.mytree}" />
     <script>
         let myVal = makeOrderList("orderslist", "treebody");
-        /*
-        let myNode = makeNode("root");
-        document.getElementById("treebody").append(myNode);
-        makeDiv("treebody", 3);
-        let doubleDiv = document.createElement("div");
-        let divOne = makeNode("???");
-        let divTwo = makeNode("!!!");
-        doubleDiv.setAttribute("class", "tree-row");
-        doubleDiv.append(divOne);
-        doubleDiv.append(divTwo);
-        document.getElementById("treebody").append(doubleDiv);
-        makeDiv("treebody", 3);
-        let qdiv = document.createElement("div");
-        qdiv.setAttribute("class", "tree-row");
-        let divUno = makeNode("1");
-        let divDos = makeNode("2");
-        let divTres = makeNode("3");
-        let divCuatro = makeNode("NULL");
-        qdiv.append(divUno);
-        qdiv.append(divDos);
-        qdiv.append(divTres);
-        qdiv.append(divCuatro);
-        document.getElementById("treebody").append(qdiv);
-        */
        makeTree(myVal, "treebody");
+       let myP = document.getElementById("orderslist");
+       myP.parentNode.removeChild(myP);
     </script>
     <a href="/simpletree">Create another SimpleTree</a>
     <br>

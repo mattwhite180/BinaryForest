@@ -1,7 +1,6 @@
 function makeOrderList(oldList, mainBody) {
     let listDataRaw = document.getElementById(oldList);
     let listDataRawText = listDataRaw.textContent;
-    listDataRaw.parentNode.removeChild(listDataRaw);
     let listData = listDataRawText.split(";");
     // Make a container element for the list
     listContainer = document.createElement('div'),

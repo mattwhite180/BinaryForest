@@ -28,5 +28,17 @@
 .tree-div {
     height: 300px;
     width: 600px;
+    background-color: darkblue;
     background-color: rgb(9, 24, 49);
+    margin: auto;
+    padding: 25px;
+    border: 5px solid black;
 }
+
+html {
+    padding: 25px;
+    border: 5px solid black;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 10%;
+  }
