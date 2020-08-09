@@ -20,13 +20,17 @@ public class BinaryForestApplication {
 		return args -> {
 
 			System.out.println();
-			System.out.println("88888888888888888888888888888888888888888888888888888888888888");
-			System.out.println("88888888888888888888888888888888888888888888888888888888888888");
-			System.out.println("8888                                                      8888");
-			System.out.println("8888   Go to http://localhost:8080/ in your web browser   8888");
-			System.out.println("8888                                                      8888");
-			System.out.println("88888888888888888888888888888888888888888888888888888888888888");
-			System.out.println("88888888888888888888888888888888888888888888888888888888888888");
+			System.out.println("888888888888888888888888888888888888888888888888888888888888888888");
+			System.out.println("888888888888888888888888888888888888888888888888888888888888888888");
+			System.out.println("888888                                                      888888");
+			System.out.println("888888                                                      888888");
+			System.out.println("888888                                                      888888");
+			System.out.println("888888   Go to http://localhost:8080/ in your web browser   888888");
+			System.out.println("888888                                                      888888");
+			System.out.println("888888                                                      888888");
+			System.out.println("888888                                                      888888");
+			System.out.println("888888888888888888888888888888888888888888888888888888888888888888");
+			System.out.println("888888888888888888888888888888888888888888888888888888888888888888");
 			System.out.println();
 
 			/*
