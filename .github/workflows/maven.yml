@@ -10,7 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  testing:
 
     runs-on: ubuntu-latest
 
@@ -20,6 +20,6 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - name: Build with 
+    - name: Test 
       working-directory: BinaryForest
       run: ./mvnw test
