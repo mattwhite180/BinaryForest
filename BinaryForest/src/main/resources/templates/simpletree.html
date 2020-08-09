@@ -8,7 +8,7 @@
 <body>
     <h1>Form</h1>
     <p>Enter each element you want to insert into the binary tree separated by comma.</p>
-    <p>For example, <i>6,8,7</i> will insert a <i>6</i> then an <i>8</i> then a <i>7</i> into the binary tree</p>
+    <p>For example, 6,8,7 will insert a 6 then an 8 then a 7 into the binary tree</p>
     <form action="#" th:action="@{/simpletree}" th:object="${simpletree}" method="post">
     	<p>Insert: <input type="text" th:field="*{mytree}"/></p>
         <p><input type="submit" value="Submit" /></p>
