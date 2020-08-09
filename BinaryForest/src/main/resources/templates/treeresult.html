@@ -7,16 +7,22 @@
     <script src="myScript.js"></script>
 </head>
 <body id="treebody">
-    <h1>Result</h1>
-    <p id="orderslist" th:text="${simpletree.mytree}" />
-    <script>
-        let myVal = makeOrderList("orderslist", "treebody");
-       makeTree(myVal, "treebody");
-       let myP = document.getElementById("orderslist");
-       myP.parentNode.removeChild(myP);
-    </script>
-    <a href="/simpletree">Create another SimpleTree</a>
-    <br>
-    <a href="/">Back to index</a>
+    <div>
+        <div class="results-div" id=resultsdiv>
+            <h1>Result</h1>
+            <p id="orderslist" th:text="${simpletree.mytree}" />
+            <script>
+                let myVal = makeOrderList("orderslist", "resultsdiv");
+                makeTree(myVal, "resultsdiv");
+                let myP = document.getElementById("orderslist");
+                myP.parentNode.removeChild(myP);
+            </script>
+        </div>
+        <div class="linksdiv">
+            <a href="/simpletree">Create another SimpleTree</a>
+            <br>
+            <a href="/">Back to index</a>
+        </div>
+    </div>
 </body>
 </html>

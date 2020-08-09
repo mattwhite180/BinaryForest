@@ -42,3 +42,10 @@ html {
     background-color: lightblue;
     border-radius: 10%;
   }
+
+.results-div {
+    padding: 25px;
+    border: 5px solid black;
+    text-align: center;
+    background-color: lightblue;
+}
