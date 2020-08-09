@@ -19,7 +19,15 @@ public class BinaryForestApplication {
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
 
-			System.out.println("Hello world!!!!!!!!");
+			System.out.println();
+			System.out.println("88888888888888888888888888888888888888888888888888888888888888");
+			System.out.println("88888888888888888888888888888888888888888888888888888888888888");
+			System.out.println("8888                                                      8888");
+			System.out.println("8888   Go to http://localhost:8080/ in your web browser   8888");
+			System.out.println("8888                                                      8888");
+			System.out.println("88888888888888888888888888888888888888888888888888888888888888");
+			System.out.println("88888888888888888888888888888888888888888888888888888888888888");
+			System.out.println();
 
 			/*
 			System.out.println("Let's inspect the beans provided by Spring Boot:");

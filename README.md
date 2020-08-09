@@ -1,11 +1,9 @@
 # BinaryForest
 
-To run, `./mvnw spring-boot:run`
+Matthew White
 
-To test, `./mvnw test`
+To run, Execute the following command from the root direcotry: `./mvnw spring-boot:run`
 
-Go to `http://localhost:8080/greeting?name=User`
+To test, Execute the following command from the root directory: `./mvnw test`
 
-[Application](https://spring.io/guides/gs/spring-boot/)
-[Forms](https://spring.io/guides/gs/handling-form-submission/)
-[style](https://www.w3schools.com/css/css_link.asp)
+Go to `http://localhost:8080/`
