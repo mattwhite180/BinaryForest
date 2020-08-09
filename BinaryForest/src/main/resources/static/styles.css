@@ -1,3 +1,11 @@
+html {
+    padding: 25px;
+    border: 5px solid black;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 10%;
+  }
+
 .treenode {
     margin: auto;
     height: 50px;
@@ -26,8 +34,8 @@
 }
 
 .tree-div {
-    height: 300px;
-    width: 600px;
+    height: auto;
+    width: auto;
     background-color: darkblue;
     background-color: rgb(9, 24, 49);
     margin: auto;
@@ -35,17 +43,22 @@
     border: 5px solid black;
 }
 
-html {
-    padding: 25px;
-    border: 5px solid black;
-    text-align: center;
-    background-color: lightblue;
-    border-radius: 10%;
-  }
-
 .results-div {
     padding: 25px;
     border: 5px solid black;
     text-align: center;
     background-color: lightblue;
+}
+
+.box {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: auto;
+    height: auto;;
+  }
+
+.alternate {
+    box-sizing: border-box;
 }
