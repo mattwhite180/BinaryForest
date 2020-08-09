@@ -22,4 +22,4 @@ jobs:
         java-version: 1.8
     - name: Build with 
       working-directory: BingoProject
-      run: ./mvn test
+      run: ./mvnw test
