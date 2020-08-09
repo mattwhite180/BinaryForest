@@ -208,38 +208,6 @@ public class BinaryTree {
         }
     }
 
-    public String treeToStringmyDev(String myString, int level, Node node) {
-        /*
-        root node --> left subtree --> right subtree
-        */
-        String myString = new String();
-        if (node != null) {
-            myString += "," + String.valueOf(node.value);
-            myString += traversePreOrder(node.left);
-            myString += traversePreOrder(node.right);
-        }
-        return myString;
-    }
-
-    public String treeToStringDev() {
-        ArrayList<Integer> nullList = new ArrayList<Integer>();
-        String myString = new String();
-
-        int levelTotal = 1;
-        boolean allNull = false;
-
-        while (true) {
-            allNull = true;
-            for (int i = 0; i < levelTotal; i++) {
-                
-            }
-            if (allNull == true) {
-                return myString;
-            }
-            levelTotal *= 2;
-        }
-    }
-
     public void insert(int value) {
 	    root = insertRecursive(root, value);
     }
