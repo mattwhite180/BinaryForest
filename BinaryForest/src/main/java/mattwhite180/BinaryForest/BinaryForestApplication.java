@@ -20,17 +20,30 @@ public class BinaryForestApplication {
 		return args -> {
 
 			System.out.println();
-			System.out.println("888888888888888888888888888888888888888888888888888888888888888888");
-			System.out.println("888888888888888888888888888888888888888888888888888888888888888888");
-			System.out.println("888888                                                      888888");
-			System.out.println("888888                                                      888888");
-			System.out.println("888888                                                      888888");
-			System.out.println("888888   Go to http://localhost:8080/ in your web browser   888888");
-			System.out.println("888888                                                      888888");
-			System.out.println("888888                                                      888888");
-			System.out.println("888888                                                      888888");
-			System.out.println("888888888888888888888888888888888888888888888888888888888888888888");
-			System.out.println("888888888888888888888888888888888888888888888888888888888888888888");
+			System.out.println("8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888");
+			System.out.println("8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888");
+			System.out.println("888888                                                                            888888");
+			System.out.println("888888   ______________________________________                                   888888");
+			System.out.println("888888  / Go to http://localhost:8080/ in your \\                                  888888");
+			System.out.println("888888  \\ web browser                          /                                  888888");
+			System.out.println("888888   --------------------------------------                                   888888");
+			System.out.println("888888  \\                             .       .                                   888888");
+			System.out.println("888888   \\                           / `.   .' \"                                  888888");
+			System.out.println("888888    \\                  .---.  <    > <    >  .---.                          888888");
+			System.out.println("888888     \\                 |    \\  \\ - ~ ~ - /  /    |                          888888");
+			System.out.println("888888           _____          ..-~             ~-..-~                           888888");
+			System.out.println("888888          |     |   \\~~~\\.'                    `./~~~/                      888888");
+			System.out.println("888888         ---------   \\__/                        \\__/                       888888");
+			System.out.println("888888        .'  O    \\     /               /       \\  \"                         888888");
+			System.out.println("888888       (_____,    `._.'               |         }  \\/~~~/                   888888");
+			System.out.println("888888        `----.          /       }     |        /    \\__/                    888888");
+			System.out.println("888888              `-.      |       /      |       /      `. ,~~|                888888");
+			System.out.println("888888                  ~-.__|      /_ - ~ ^|      /- _      `..-'                888888");
+			System.out.println("888888                       |     /        |     /     ~-.     `-. _  _  _       888888");
+			System.out.println("888888                       |_____|        |_____|         ~ - . _ _ _ _ _>      888888");
+			System.out.println("888888                                                                            888888");
+			System.out.println("8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888");
+			System.out.println("8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888");
 			System.out.println();
 
 			/*
