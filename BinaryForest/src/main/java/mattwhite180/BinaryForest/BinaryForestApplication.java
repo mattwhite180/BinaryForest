@@ -19,6 +19,7 @@ public class BinaryForestApplication {
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {
 
+			// Dino from `cowsay -f stegosaurus Go to http://localhost:8080/ in your web browser`
 			System.out.println();
 			System.out.println("8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888");
 			System.out.println("8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888");
