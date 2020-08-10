@@ -1,7 +1,5 @@
 # BinaryForest
 
-Matthew White
-
 ![Java Badge](https://img.shields.io/badge/java-11-informational?style=plastic&logo=java&logoColor=yellow&color=yellow)
 ![Springboot Badge](https://img.shields.io/badge/SpringBoot-2.4.0-informational?style=plastic&logo=spring&logoColor=green&color=green)
 ![HTML Badge](https://img.shields.io/badge/HTML/CSS-JS-informational?style=plastic&logo=firefox&logoColor=blue&color=blue)
