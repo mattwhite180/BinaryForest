@@ -5,7 +5,7 @@ public class SimpleTree {
     private String mytree;
 
     public SimpleTree() {
-        mytree = "EMPTY";
+        mytree = "";
         bt = new BinaryTree();
     }
 
