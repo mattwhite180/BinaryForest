@@ -13,7 +13,7 @@ class BinaryTreeTest {
                 BinaryTree myTree = new BinaryTree();
                 myTree.insert(1);
                 myTree.insert(3);
-                myTree.insert(5); // change back to four
+                myTree.insert(4);
                 assertTrue(myTree.containsNode(4));
                 assertFalse(myTree.containsNode(2));
         }
