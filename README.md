@@ -9,6 +9,12 @@ To run, Execute the following command from the `BinaryForest` direcotry: `./mvnw
 
 To test, Execute the following command from the `BinaryForest` directory: `./mvnw test`
 
+To create an executable `.jar` file, run the following commands from the BinaryForest directory:
+```
+./mvnw clean package
+java -jar target/BinaryForest-0.0.1-SNAPSHOT.jar
+```
+
 Go to `http://localhost:8080/`
 
 

@@ -22,8 +22,8 @@ public class BinaryForestApplication {
 			System.out.println("888888888888888888888888888888888888888888888888888888888888888888888888888888888");
 			System.out.println("888888888888888888888888888888888888888888888888888888888888888888888888888888888");
 			System.out.println("888888 ______________________________________                              888888");
-			System.out.println("888888/ Go to http://localhost:8080/ in your \\                             888888");
-			System.out.println("888888\\ web browser                          /                             888888");
+			System.out.println("888888/ Hello  world!                        \\                             888888");
+			System.out.println("888888\\ Server is running on port 8080       /                             888888");
 			System.out.println("888888 --------------------------------------                              888888");
 			System.out.println("888888 \\                             .       .                             888888");
 			System.out.println("888888  \\                           / `.   .' \"                            888888");
