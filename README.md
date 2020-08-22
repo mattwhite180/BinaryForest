@@ -19,4 +19,4 @@ Go to `http://localhost:8080/`
 
 ---
 
-[aws](http://binaryforest-env.eba-xnypsxbn.us-west-2.elasticbeanstalk.com/)
+[aws](http://www.binaryforest-mattwhite.com/simpletree)
