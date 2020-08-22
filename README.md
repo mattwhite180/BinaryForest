@@ -17,4 +17,6 @@ java -jar target/BinaryForest-0.0.1-SNAPSHOT.jar
 
 Go to `http://localhost:8080/`
 
+---
 
+[aws](http://binaryforest-env.eba-xnypsxbn.us-west-2.elasticbeanstalk.com/)
