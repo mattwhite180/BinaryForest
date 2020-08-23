@@ -25,12 +25,12 @@ public class SimpleTree {
             mytree = "ERROR";
             return;
         }
-        mytree += "INPUT..................." + value + ";";
-        mytree += "IN ORDER..........." + bt.traverseInOrder(bt.root) + ";";
-        mytree += "PRE ORDER........" + bt.traversePreOrder(bt.root) + ";";
-        mytree += "POST ORDER......" + bt.traversePostOrder(bt.root) + ";";
-        mytree += "LEVEL ORDER..." + bt.traverseLevelOrder() + ";";
-        mytree += "TESTING1234..." + bt.treeToString();
+        mytree += "INPUT FROM USER................." + value + ";";
+        mytree += "TRAVERSAL IN ORDER..........." + bt.traverseInOrder(bt.root) + ";";
+        mytree += "TRAVERSAL PRE ORDER........" + bt.traversePreOrder(bt.root) + ";";
+        mytree += "TRAVERSAL POST ORDER......" + bt.traversePostOrder(bt.root) + ";";
+        mytree += "TRAVERSAL LEVEL ORDER..." + bt.traverseLevelOrder() + ";";
+        mytree += "TRAVERSAL TESTING1234..." + bt.treeToString();
         //mytree = ":)";
     }
 
