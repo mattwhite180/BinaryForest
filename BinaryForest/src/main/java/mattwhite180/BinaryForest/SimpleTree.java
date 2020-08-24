@@ -16,11 +16,11 @@ public class SimpleTree {
 
     public void setMytree(String value) {
         mytree = "";
-		value = value.trim();
+		value = value.replace(" ", "");
         try {
             String[] stringList = value.split(",");
             for(int i = 0; i < stringList.length; i++) {
-                bt.insert(Integer.parseInt(stringList[i].trim()));
+                bt.insert(Integer.parseInt(stringList[i]));
             }
 	    } catch (Exception e) {
             mytree = "ERROR";
