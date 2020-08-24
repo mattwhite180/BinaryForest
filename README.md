@@ -19,4 +19,4 @@ Go to `http://localhost:8080/`
 
 ---
 
-See it live on my [AWS](http://www.binaryforest-mattwhite.com/simpletree) server
+See it live on my [AWS](http://www.binaryforest-mattwhite.com) server
